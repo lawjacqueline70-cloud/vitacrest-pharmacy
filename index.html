@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VistaCrest Community Pharmacy</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f9fc;
+color:#333;
+}
+
+header{
+background:#0A7B83;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd54f;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(10,123,131,.8),rgba(10,123,131,.8)),
+url("https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FFD54F;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#0A7B83;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#0A7B83;
+margin-bottom:15px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.product{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.product img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.hours{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.hours table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.hours td{
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.contact{
+background:#0A7B83;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+font-size:18px;
+}
+
+footer{
+background:#06474b;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:900px){
+
+.about,
+.hours{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+VistaCrest Pharmacy
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#hours">Hours</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Your Health,<br>Your Trusted Community Pharmacy</h1>
+
+<p>Professional care, quality medicines, and personalized healthcare for every family.</p>
+
+<a href="#services" class="btn">Explore Our Services</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About VistaCrest Pharmacy</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<p style="font-size:18px;line-height:1.8">
+
+VistaCrest Community Pharmacy is committed to improving the health and well-being of our community through accessible healthcare services, professional medication counselling, and high-quality pharmaceutical products.
+
+<br><br>
+
+Our pharmacists work closely with patients to provide personalized medication management, health screenings, vaccination services, and wellness advice.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💊 Prescription Dispensing</h3>
+<p>Fast, safe, and accurate prescription filling with professional counselling.</p>
+</div>
+
+<div class="card">
+<h3>🩺 Health Screening</h3>
+<p>Blood pressure, blood glucose, cholesterol, and BMI monitoring.</p>
+</div>
+
+<div class="card">
+<h3>💉 Vaccination</h3>
+<p>Seasonal flu vaccines and selected immunization services.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Medication Therapy Management</h3>
+<p>Helping patients optimize medicine use and improve treatment outcomes.</p>
+</div>
+
+<div class="card">
+<h3>👨‍⚕️ Minor Ailment Consultation</h3>
+<p>Professional advice for common illnesses and self-care management.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Wellness & Nutrition</h3>
+<p>Supplements, vitamins, healthy lifestyle advice, and preventive healthcare.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2>Health Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80">
+<h3>Prescription Medicines</h3>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=800&q=80">
+<h3>Vitamins & Supplements</h3>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=800&q=80">
+<h3>Personal Care</h3>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80">
+<h3>Medical Devices</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="hours">
+
+<h2>Opening Hours</h2>
+
+<div class="hours">
+
+<table>
+
+<tr>
+<td>Monday</td>
+<td>8:30 AM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>8:30 AM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>8:30 AM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>8:30 AM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>8:30 AM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>Saturday</td>
+<td>9:00 AM - 6:00 PM</td>
+</tr>
+
+<tr>
+<td>Sunday</td>
+<td>10:00 AM - 4:00 PM</td>
+</tr>
+
+</table>
+
+<div>
+
+<h3 style="color:#0A7B83;margin-bottom:20px;">Why Choose Us?</h3>
+
+<ul style="font-size:18px;line-height:2;">
+<li>✔ Licensed Pharmacists</li>
+<li>✔ Friendly Healthcare Advice</li>
+<li>✔ Affordable Healthcare Products</li>
+<li>✔ Personalized Patient Care</li>
+<li>✔ Convenient Community Location</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 style="color:white;">Contact Us</h2>
+
+<p><strong>VistaCrest Community Pharmacy</strong></p>
+
+<p>📍 123 Wellness Avenue, Kuala Lumpur</p>
+
+<p>📞 +60 12-345 6789</p>
+
+<p>✉ vistacrestpharmacy@email.com</p>
+
+<p>Follow us on Facebook | Instagram | TikTok</p>
+
+</section>
+
+<footer>
+
+© 2026 VistaCrest Community Pharmacy | Caring Beyond Medicines
+
+</footer>
+
+</body>
+</html>
